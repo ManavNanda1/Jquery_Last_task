@@ -1,0 +1,288 @@
+/* basic styling for all */
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+}
+body{
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+::placeholder{
+    text-align: center;
+}
+
+/* header styling below  */
+.heading{
+    background-color: rgb(85, 235, 178);
+    border-radius: 20px;
+}
+
+.heading h1{
+    font-weight: bold;
+}
+
+.heading:hover{
+    color: black;
+    background-color: rgb(238, 64, 87);
+    transition: 0.5s ease-in;
+    border: 2px solid white;
+}
+
+/* Add-Button styling below  */
+#Add-Box{
+    color: black;
+    font-size: 25px;
+    background-color: rgb(243, 87, 209);
+    border-radius: 15px;
+    border: 2px solid black;
+    font-weight: bold;  
+}
+
+#Add-Box:hover{
+    background-color: aquamarine;
+    color: black;
+    transition: 0.5s ease-in-out;
+    border: 2px solid white;
+}
+
+/* remove btn styling below  */
+.rem-style{
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.4em;
+    color: #e74c3c;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .rem-style:hover {
+    background-color: red;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s ease-in;
+  }
+
+  /* input boxes style below  */
+  input{
+    border-radius: 15px;
+  }
+  input:hover{
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: 0.3s ease-in;
+  }
+
+  /* pass and fail button styling  */
+  .pass-btn{
+    background-color: cyan;
+    color: black;
+    font-weight: 700;
+  }
+  .pass-btn:hover{
+    color: black;
+    background-color: rgb(17, 228, 63);
+    transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+  }
+
+  .fail-btn{
+    color: rgb(0, 0, 0);
+    background-color: #f387ab;
+    font-weight: 700;
+  }
+  .fail-btn:hover{
+    background-color: rgba(160, 0, 0, 0.932);
+    color: black;
+    font-weight: bolder;
+  }
+
+  footer{
+    background-color: black;
+    color: red;
+    font-size: 35px;
+  }
+  footer:hover{
+    border: 2px solid white;
+    transition: 0.2s ease-in;
+     
+  }
+
+
+  /* Responsive Styling for table below  */
+  @media only screen and (max-width:500px) {
+    .first-table thead{
+      display: none;
+    }
+    .first-table, .first-table tbody , .first-table tr , .first-table td{
+      display: block;
+      width: 100%;
+    }
+    .first-table tr{
+      margin-bottom: 8px;
+    }
+    .first-table tbody tr td{
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+    }
+    .first-table td::before{
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-weight: 600;
+      font-size: 14px;
+      text-align: left;
+  
+    }
+    .first-table input{
+      width: -moz-available; 
+      width: -webkit-fill-available;
+    }
+  }
+
+
+  /* animated bg  */
+  @keyframes glow{
+    50%{
+      border-color:lime;
+      width:95%;
+      box-shadow:0px 0px 10px -2px green;
+    }
+    100%{
+      border-color:green;
+      width:35%;
+      box-shadow:0px 0px 10px -2px green;
+    }
+  }
+  .loader{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-right: 10px;
+  }
+  @keyframes load10{
+    50%{
+      transform:rotatez(180deg);
+      border-style:dashed;
+      border-color:red maroon indianred orangered;
+    }
+    100%{
+      transform:rotatez(360deg);
+    }
+  }
+  .loader10::before{
+    content:"";
+    color:white;
+    height:50px;
+    width:50px;
+    background:transparent;
+    border-radius:50%;
+    border:20px solid red;
+    animation:load10 1s infinite;
+  }
+
+    /* save button styling below  */
+    .saved-btn{
+      background-color: cornflowerblue;
+      color: black;
+      font-weight: bolder;
+      font-size: 25px
+    }
+
+    #search-box{
+      display: none;
+    }
+    #myInput{
+      border: 2px solid black;
+      font-size: 20px;
+      font-weight: bold;
+      background: snow;
+    }
+    #myInput:hover{
+      color: black;
+      background-color: bisque;
+      transition: 0.3s ease-in;
+    }
+  
+  
+    /* sort button styling below  */
+    #sort{
+      display: none;
+    }
+    .sort-btn{
+      font-size: 25px;
+      color: black;
+      border-radius: 15px;
+      padding: 4px;
+      background: thistle;
+      font-weight: bold;
+  }
+  .sort-btn:hover{
+    background: honeydew;
+    transition: 0.4s ease-in;
+  }
+  
+  #SortSub{
+      font-size: 25px;
+      color: black;
+      border-radius: 15px;
+      font-weight: bold;
+      border: 2px solid black;
+  }
+  #SortSub:hover{
+    background: honeydew;
+    transition: 0.4s ease-in;
+  }
+  
+  
+  /* pass fail color styling below  */
+  .tab-col{
+    background-color: #e94c3b;
+  }
+  .pass-col{
+    background-color: rgb(49, 189, 231);
+    color: black;
+  }
+  
+  
+  /* hover effects on saved table */
+  #SavedTable:hover{
+    background-color: rgb(216, 179, 216) !important;
+    font-weight: bolder;
+    color: white !important;
+  }
+  
+  
+  /* percentage tabel styling below  */
+  #percentTable{
+    display: none;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+  }
+  
+  #percentTable:hover{
+    background-color: rgb(216, 179, 216) !important;
+    font-weight: bolder;
+    color: white !important;
+    transition: 0.5s ease-in;
+  }
+  
+  #PercentageTable:hover{
+    color: white !important;
+    background-color: rgb(216, 179, 216) !important;
+  }
+  
+  .show{
+    display: none;
+  }
+  

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="Style.css" />
+    <title>Jquery Task-3</title>
+  </head>
+  <body>
+    <div class="container-fluid mt-4">
+      <!-- Header Section Code Below -->
+      <div class="container text-center heading">
+        <h1>Jquery Task-3 Of Table (Adding , Removing , Sorting , Searching ....)</h1>
+      </div>
+    
+      <!-- Add Box Button Code Below -->
+      <div class="container text-center mt-4">
+        <button class="btn btn-primary text-center" id="Add-Box">
+          Add-Box
+        </button>
+      </div>
+
+      <!-- Table-1 Code Below -->
+      <div class="container mt-4 table-responsive-sm text-center">
+        <table
+          class="table table-dark table-hover first-table table-responsive-sm text-center"
+          id="Table_1"
+        >
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Subject</th>
+              <th>Marks</th>
+              <th>Result</th>
+              <th>Add/Remove</th>
+            </tr>
+          </thead>
+          <form id="My-Form">
+            <tbody>
+              <tr>
+                <td data-label="ID" class="index-no"></td>
+                <td data-label="Name">
+                  <input
+                    type="text"
+                    placeholder="Enter Your Name"
+                    class="name-val"
+                  />
+                </td>
+                <td data-label="Subject">
+                  <input
+                    type="text"
+                    placeholder="Subject name"
+                    class="subject-val"
+                  />
+                </td>
+                <td data-label="Marks">
+                  <input type="number" placeholder="Marks" class="mark-val" />
+                </td>
+                <td data-label="Result">
+                  <button class="btn btn-primary pass-btn" type="button">
+                    Pass
+                  </button>
+                  <button class="btn btn-danger fail-btn" type="button">
+                    Fail
+                  </button>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td data-label="ID" class="index-no"></td>
+                <td data-label="Name">
+                  <input
+                    type="text"
+                    placeholder="Enter Your Name"
+                    class="name-val"
+                  />
+                </td>
+                <td data-label="Subject">
+                  <input
+                    type="text"
+                    placeholder="Subject name"
+                    class="subject-val"
+                  />
+                </td>
+                <td data-label="Marks">
+                  <input type="number" placeholder="Marks" class="mark-val" />
+                </td>
+                <td data-label="Result">
+                  <button class="btn btn-primary pass-btn" type="button">
+                    Pass
+                  </button>
+                  <button class="btn btn-danger fail-btn" type="button">
+                    Fail
+                  </button>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td data-label="ID" class="index-no"></td>
+                <td data-label="Name">
+                  <input
+                    type="text"
+                    placeholder="Enter Your Name"
+                    class="name-val"
+                  />
+                </td>
+                <td data-label="Subject">
+                  <input
+                    type="text"
+                    placeholder="Subject name"
+                    class="subject-val"
+                  />
+                </td>
+                <td data-label="Marks">
+                  <input type="number" placeholder="Marks" class="mark-val" />
+                </td>
+                <td data-label="Result">
+                  <button class="btn btn-primary pass-btn" type="button">
+                    Pass
+                  </button>
+                  <button class="btn btn-danger fail-btn" type="button">
+                    Fail
+                  </button>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td data-label="ID" class="index-no"></td>
+                <td data-label="Name">
+                  <input
+                    type="text"
+                    placeholder="Enter Your Name"
+                    class="name-val"
+                  />
+                </td>
+                <td data-label="Subject">
+                  <input
+                    type="text"
+                    placeholder="Subject name"
+                    class="subject-val"
+                  />
+                </td>
+                <td data-label="Marks">
+                  <input type="number" placeholder="Marks" class="mark-val" />
+                </td>
+                <td data-label="Result">
+                  <button class="btn btn-primary pass-btn" type="button">
+                    Pass
+                  </button>
+                  <button class="btn btn-danger fail-btn" type="button">
+                    Fail
+                  </button>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td data-label="ID" class="index-no"></td>
+                <td data-label="Name">
+                  <input
+                    type="text"
+                    placeholder="Enter Your Name"
+                    class="name-val"
+                  />
+                </td>
+                <td data-label="Subject">
+                  <input
+                    type="text"
+                    placeholder="Subject name"
+                    class="subject-val"
+                  />
+                </td>
+                <td data-label="Marks">
+                  <input type="number" placeholder="Marks" class="mark-val" />
+                </td>
+                <td data-label="Result">
+                  <button class="btn btn-primary pass-btn" type="button">
+                    Pass
+                  </button>
+                  <button class="btn btn-danger fail-btn" type="button">
+                    Fail
+                  </button>
+                </td>
+                <td></td>
+              </tr>
+            </tbody>
+          </form>
+        </table>
+      </div>
+
+      <div class="save-button text-center">
+        <button class="btn btn-primary mb-3 saved-btn" >
+          Click To Save
+        </button>
+      </div>
+
+      <div class="container text-center mb-3" id="sort">
+        <button class="sort-btn mb-3 mx-3">
+          Click Me To Sort By Name
+        </button>
+        <button
+          class="btn btn-warning mb-2"
+          id="SortSub"
+        >
+          Click Me Sort By Subject
+        </button>
+        <div class="search">
+          <input
+            type="search"
+            class="form-control"
+            id="myInput"
+            placeholder="Search for names.."
+          />
+        </div>
+      </div>
+  
+      <!-- saved table will be there -->
+      <div class="container mt-3 table-responsive">
+        <table
+          class="table bg-dark text-white table-hover text-center table-responsive"
+          id="SavedTable"
+        ></table>
+      </div>
+  
+      <div class="text-center mt-5 mb-3 container" id="percentTable">
+        <h1>Percentage Table Below</h1>
+      </div>
+      <!-- percentage table code below  -->
+      <div class="container mt-3 table-responsive">
+        <table
+          class="table bg-dark text-white table-hover text-center table-responsive"
+          id="PercentageTable"
+        ></table>
+      </div>
+  
+    </div>
+    <div class="container text-center">
+      <footer>
+        <div class="loader loader10"> <div id="TimeCount" class="ms-2"></div> <div >
+      </footer>
+    </div>
+  </body>
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="jquery-3.6.3.js"></script>
+  <script src="Script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>
+
